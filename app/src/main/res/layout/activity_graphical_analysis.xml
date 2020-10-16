@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".graphs.GraphicalAnalysis">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:onClick="onBack"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="#000" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/search_icon"
+                app:tint="#000" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/muli_black"
+            android:includeFontPadding="false"
+            android:padding="10dp"
+            android:text="@string/graphical_analysis"
+            android:textAllCaps="true"
+            android:textColor="#2196F3"
+            android:textSize="27sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onFlame"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_fire">
+
+                <ImageView
+                    android:id="@+id/flame"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/graph_1" />
+
+                <TextView
+                    android:id="@+id/flameSensor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_toEndOf="@+id/flame"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="20sp"
+                    android:text="@string/flame_nsensor"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <!--                <Button-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/expand"-->
+                <!--                    android:textColor="#fff"-->
+                <!--                    android:layout_alignStart="@id/graph_text"-->
+                <!--                    android:background="#00000000"-->
+                <!--                    android:padding="20dp"-->
+                <!--                    android:layout_alignParentBottom="true"/>-->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onRain"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_rain">
+
+                <ImageView
+                    android:id="@+id/rainSensor"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/graph_2" />
+
+                <TextView
+                    android:id="@+id/rain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_toEndOf="@+id/rainSensor"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="20sp"
+                    android:text="@string/rain_nsensor"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <!--                <Button-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/expand_all"-->
+                <!--                    android:textColor="#fff"-->
+                <!--                    android:layout_alignStart="@id/graph_text"-->
+                <!--                    android:background="#00000000"-->
+                <!--                    android:padding="20dp"-->
+                <!--                    android:layout_alignParentBottom="true"/>-->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onSmoke"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_smoke">
+
+                <ImageView
+                    android:id="@+id/smoke_sensor"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="29dp"
+                    android:src="@drawable/graph_3" />
+
+                <TextView
+                    android:id="@+id/smoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/smoke_sensor"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="20sp"
+                    android:text="@string/smoke_nsensor"
+                    android:textColor="#321A1A"
+                    android:textSize="25sp" />
+
+                <!--                <Button-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/expand_all"-->
+                <!--                    android:textColor="#fff"-->
+                <!--                    android:layout_alignStart="@id/smoke"-->
+                <!--                    android:background="#00000000"-->
+                <!--                    android:padding="20dp"-->
+                <!--                    android:layout_alignParentBottom="true"/>-->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onTemp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_temp">
+
+                <ImageView
+                    android:id="@+id/temp"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/graph_4" />
+
+                <TextView
+                    android:id="@+id/graph_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_toEndOf="@id/temp"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="20sp"
+                    android:text="@string/temp_nsensor"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <!--                <Button-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/expand_all"-->
+                <!--                    android:textColor="#fff"-->
+                <!--                    android:layout_alignStart="@id/graph_text"-->
+                <!--                    android:background="#00000000"-->
+                <!--                    android:padding="20dp"-->
+                <!--                    android:layout_alignParentBottom="true"/>-->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onHumid"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_humidity">
+
+                <ImageView
+                    android:id="@+id/humidity"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/graph_5" />
+
+                <TextView
+                    android:id="@+id/humid_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_toEndOf="@id/humidity"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="20sp"
+                    android:text="@string/humidity_nsensor"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <!--                <Button-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/expand_all"-->
+                <!--                    android:textColor="#fff"-->
+                <!--                    android:layout_alignStart="@id/graph_text"-->
+                <!--                    android:background="#00000000"-->
+                <!--                    android:padding="20dp"-->
+                <!--                    android:layout_alignParentBottom="true"/>-->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onPir"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_pir">
+
+                <ImageView
+                    android:id="@+id/pir"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/graph_6" />
+
+                <TextView
+                    android:id="@+id/pirText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_toEndOf="@id/pir"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="20sp"
+                    android:text="@string/pir_nsensor"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <!--                <Button-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/expand_all"-->
+                <!--                    android:textColor="#fff"-->
+                <!--                    android:layout_alignStart="@id/graph_text"-->
+                <!--                    android:background="#00000000"-->
+                <!--                    android:padding="20dp"-->
+                <!--                    android:layout_alignParentBottom="true"/>-->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

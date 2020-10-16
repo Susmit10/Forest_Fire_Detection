@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#EEFBFF"
+    android:paddingStart="15dp"
+    android:paddingEnd="0dp">
+
+
+    <TextView
+        android:id="@+id/menu_slogan"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/slogan" />
+    <TextView
+        android:fontFamily="@font/muli_black"
+        android:id="@+id/app_name"
+        android:layout_above="@id/menu_slogan"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#000"
+        android:textSize="25sp" />
+    <ImageView
+        android:layout_above="@id/app_name"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:src="@drawable/tree" />
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="175dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="8dp"
+        android:layout_width="150dp"
+        android:src="@drawable/firebrigadelogo" />
+
+
+</RelativeLayout>

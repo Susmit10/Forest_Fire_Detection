@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_background2"
+    android:orientation="vertical"
+    tools:context=".Verify_PhoneNo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/firebrigadelogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:text="@string/verify_phone_no"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_verification_code_if_not_automatically_authenticated"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="40dp"
+            >
+
+<!--            <EditText-->
+<!--                android:id="@+id/verification_code_entered_by_user"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="@string/enter_otp" />-->
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/pin_view"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="#65EAEAEA"
+                app:itemHeight="50dp"
+                app:itemWidth="50dp"
+                app:cursorColor="#000"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemRadius="5dp"
+                app:lineColor="#391D1D"
+                app:lineWidth="1dp" />
+
+
+            <Button
+                android:id="@+id/verify_btn"
+                style="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="#fece2f"
+                android:onClick="onClickVerify"
+                android:text="@string/verify"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:transitionName="mainbtn" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

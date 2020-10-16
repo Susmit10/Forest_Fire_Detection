@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="pinViewStyle">@style/PinWidget.PinView</item>
+        <item name="colorPrimary">#FFC107</item>
+        <item name="colorPrimaryDark">#E4E4E4</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+</resources>

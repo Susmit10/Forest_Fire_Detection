@@ -1,0 +1,45 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="pinViewStyle">@style/PinWidget.PinView</item>
+        <item name="colorPrimary">#FFC107</item>
+        <item name="colorPrimaryDark">#E4E4E4</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="pinViewStyle">@style/PinWidget.PinView</item>
+        <item name="colorPrimary">#612E2E</item>
+        <item name="colorPrimaryDark">#FBC615</item>
+        <item name="colorAccent">#E91E63</item>
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="pinViewStyle">@style/PinWidget.PinView</item>
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="colorPrimaryDark">#fece2f</item>
+        <item name="colorAccent">#E91E63</item>
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+    
+    
+    <style name="navigationTheme">
+
+<!--        colour of text and icon when selected   -->
+        <item name="colorPrimary">#fece2f</item>
+
+<!--        background colour when selected   -->
+        <item name="colorControlHighlight">#000000</item>
+
+    </style>
+
+
+</resources>

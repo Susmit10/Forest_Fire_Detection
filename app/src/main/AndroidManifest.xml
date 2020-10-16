@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.forestfiredetection">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/firebrigadelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/firebrigadelogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.forestfiredetection.users.SelectMode"></activity>
+        <activity android:name="com.example.forestfiredetection.graphs.HumidityGraph" />
+        <activity android:name="com.example.forestfiredetection.graphs.PirGraph" />
+        <activity android:name="com.example.forestfiredetection.users.SensorData" />
+        <activity android:name="com.example.forestfiredetection.graphs.GraphicalAnalysis" />
+        <activity android:name="com.example.forestfiredetection.graphs.RainGraph" />
+        <activity android:name="com.example.forestfiredetection.graphs.FireGraph" />
+        <activity android:name="com.example.forestfiredetection.graphs.SmokeGraph" />
+        <activity android:name="com.example.forestfiredetection.graphs.TempGraph" />
+        <activity android:name="com.example.forestfiredetection.users.AllCategories" />
+        <activity android:name="com.example.forestfiredetection.common.OnBoarding" />
+        <activity android:name="com.example.forestfiredetection.login.SignInWithGoogle" />
+        <activity android:name="com.example.forestfiredetection.forgotpassword.ForgetPasswordOnEmailSelection" />
+        <activity android:name="com.example.forestfiredetection.forgotpassword.ForgetPasswordOnPhoneSelection" />
+        <activity android:name="com.example.forestfiredetection.forgotpassword.ForgetPasswordSuccessMessage" />
+        <activity android:name="com.example.forestfiredetection.forgotpassword.SetNewPassword" />
+        <activity android:name="com.example.forestfiredetection.forgotpassword.MakeSelection" />
+        <activity android:name="com.example.forestfiredetection.forgotpassword.Forgot_Password" />
+        <activity android:name="com.example.forestfiredetection.Verify_PhoneNo" />
+        <activity android:name="com.example.forestfiredetection.UserProfile" />
+        <activity android:name="com.example.forestfiredetection.Dashboard" />
+        <activity android:name="com.example.forestfiredetection.SignUp" />
+        <activity
+            android:name="com.example.forestfiredetection.login.Login"
+            android:label="Home" />
+        <activity android:name="com.example.forestfiredetection.common.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

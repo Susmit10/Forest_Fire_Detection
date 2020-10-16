@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "428384622970",
+    "firebase_url": "https://splash-screen-animation.firebaseio.com",
+    "project_id": "splash-screen-animation",
+    "storage_bucket": "splash-screen-animation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428384622970:android:8ea180852adc0eb65c1ec3",
+        "android_client_info": {
+          "package_name": "com.example.splashscreenanimation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428384622970-1bt4gmhns1l7qbh3kdnjrmjn8srbt63r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeRagOmAf2UQUh44Ub9PMBRaf3-z7H3NQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428384622970-1bt4gmhns1l7qbh3kdnjrmjn8srbt63r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

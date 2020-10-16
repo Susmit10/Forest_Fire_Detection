@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".users.SelectMode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/search_icon" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:includeFontPadding="false"
+                android:padding="10dp"
+                android:text="@string/select_mode"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:src="@drawable/robot"
+                android:layout_toEndOf="@+id/text"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_fire"
+                android:onClick="onAuto">
+
+                <TextView
+                    android:id="@+id/auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="15dp"
+                    android:text="@string/autonomous_nmode"
+                    android:textColor="#000"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="15dp"
+                    android:layout_below="@+id/auto"
+                    android:text="@string/desc1"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:background="#00000000"-->
+<!--                    android:padding="20dp"-->
+<!--                    android:text="@string/expand_all"-->
+<!--                    android:textColor="#000" />-->
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="-15dp"
+                android:src="@drawable/autonomous" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="-10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/background_pir"
+                android:onClick="onManual">
+
+                <TextView
+                    android:id="@+id/manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="20dp"
+                    android:text="@string/manual_ncontrolling"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="15dp"
+                    android:layout_below="@+id/manual"
+                    android:text="@string/desc2"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/mannual"
+                android:rotation="40"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.SignInWithGoogle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/forget_password_back_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="callBackScreenFromGoogleSignIn"
+            android:padding="0dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="#000" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/google_icon" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:includeFontPadding="false"
+            android:paddingTop="20sp"
+            android:shadowColor="#0E0E0E"
+            android:text="@string/sign_in"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:shadowColor="#0E0E0E"
+            android:text="@string/sign_in_with_google_accounts"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/googleIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/google_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/googleIcon"
+                android:fontFamily="@font/bungee"
+                android:text="@string/sign_in_with_google"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/google_signIn"
+                android:onClick="onGoogleSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/black_border"
+                android:textColor="#000" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:src="@drawable/facebook"
+                android:padding="10dp"
+                android:onClick="onFacebook"/>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:src="@drawable/google_plus"
+                android:onClick="onGooglePlus"/>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/twitter"
+                android:onClick="onTwitter"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#0E0E0E"
+            android:text="@string/forest_rover_robobeasts"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

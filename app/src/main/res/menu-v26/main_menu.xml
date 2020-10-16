@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- items should always be surrounded by a group or packed by a group -->
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/home"
+            android:id="@+id/nav_home"
+            android:title="@string/home" />
+        <item
+            android:icon="@drawable/search_icon"
+            android:id="@+id/nav_search"
+            android:title="@string/search" />
+        <item
+            android:icon="@drawable/categories"
+            android:id="@+id/nav_all_categories"
+            android:title="@string/all_categories" />
+        <item
+            android:icon="@drawable/add_location"
+            android:id="@+id/nav_add_missing_place"
+            android:title="@string/add_missing_place" />
+    </group>
+
+
+    <item android:title="@string/profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/login"
+                    android:id="@+id/nav_login"
+                    android:title="@string/login" />
+                <item
+                    android:icon="@drawable/ic_baseline_account_circle_24"
+                    android:id="@+id/nav_profile"
+                    android:title="@string/profile" />
+                <item
+                    android:icon="@drawable/logout"
+                    android:id="@+id/nav_logout"
+                    android:title="@string/logout" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/categories">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/fire_icon"
+                    android:iconTint="#000"
+                    android:id="@+id/nav_fire"
+                    android:title="@string/fire" />
+                <item
+                    android:icon="@drawable/rain_logo"
+                    android:iconTint="#000"
+                    android:id="@+id/nav_rain"
+                    android:title="@string/rain" />
+                <item
+                    android:icon="@drawable/smoke_logo"
+                    android:iconTint="#000"
+                    android:id="@+id/nav_smoke"
+                    android:title="@string/smoke" />
+                <item
+                    android:icon="@drawable/temp_logo"
+                    android:id="@+id/nav_temp"
+                    android:iconTint="#000"
+                    android:title="@string/temp" />
+                <item
+                    android:icon="@drawable/humidity_logo"
+                    android:id="@+id/nav_humidity"
+                    android:iconTint="#000"
+                    android:title="@string/humidity" />
+                <item
+                    android:icon="@drawable/pir_logo"
+                    android:id="@+id/nav_PIR"
+                    android:iconTint="#000"
+                    android:title="@string/pir" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Share">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:icon="@drawable/share"
+                    android:id="@+id/nav_share"
+                    android:title="@string/share" />
+                <item
+                    android:icon="@drawable/rate_us"
+                    android:id="@+id/nav_rate_us"
+                    android:title="@string/rate_us" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>
