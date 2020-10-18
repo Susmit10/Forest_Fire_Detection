@@ -21,13 +21,15 @@
             android:layout_height="150dp"
             android:layout_marginTop="10sp"
             android:src="@drawable/firebrigadelogo"
-            android:transitionName="logo_image" />
+            android:transitionName="logo_image"
+            android:contentDescription="@string/_login"
+            />
 
         <TextView
             android:id="@+id/txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-15dp"
+            android:layout_marginTop="0dp"
             android:fontFamily="@font/bungee"
             android:text="@string/welcome"
             android:textColor="#000"
@@ -38,7 +40,7 @@
             android:id="@+id/signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-20dp"
+            android:layout_marginTop="0dp"
             android:fontFamily="@font/architects_daughter"
             android:text="@string/sign_up_to_get_crazy_ideas"
             android:textColor="#027497"
